@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Sage Green Generator</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <script>
             function getHexcode() {
-              document.getElementById("demo").innerHTML = "Paragraph changed.";
+              document.getElementById("mainLine").innerHTML = "#78866b";
             }
         </script>
     </head>
 
-    <body>
-        <h1>Press the spacebar</h1>
+    <body style="background-color: #78866b;">
+        <h1>Sage Green Generator</h1>
+        <p id="mainLine">"getHexcode"<p>
+        
+        <button type="button" onkeypress="getHexcode()">Press the spacebar</button>
     </body>
 </html>

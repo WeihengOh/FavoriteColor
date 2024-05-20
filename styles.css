@@ -1,0 +1,21 @@
+@font-face {
+  font-family: gotham;
+  src:url(GothamExtraLight.otf);
+}
+
+body{
+  font-family: gotham;
+  background-color: #78866b;
+  color: black;
+}
+
+h1{
+  font-size: small;
+  text-align: left;
+}
+
+#mainLine{
+  font-size: large;
+  text-align: center;
+}
+
