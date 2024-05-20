@@ -10,12 +10,14 @@ body{
 }
 
 h1{
-  font-size: small;
+  font-size: xx-large;
   text-align: left;
+  font-weight: 200;
 }
 
+/* change padding/alignment */
 #mainLine{
-  font-size: large;
+  font-size: xx-large;
   text-align: center;
 }
 
