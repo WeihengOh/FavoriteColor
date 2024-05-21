@@ -46,3 +46,12 @@ function componentToHex(c) {
 function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
+
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(evt) {
+    if (evt.keyCode == "32") {
+        generateGreen();
+        document.getElementById("subLine").innerHTML = null;
+    }
+}

@@ -16,7 +16,7 @@ h1{
 }
 
 /* change padding/alignment */
-p {
+.main {
   text-align: center;
   font-size: medium;
   padding: none;
@@ -39,7 +39,7 @@ p {
 
 .bottomBar a {
   font-size: 100%;
-  margin: 4px 2px;
+  margin: 4px 1px;
 }
 
 
