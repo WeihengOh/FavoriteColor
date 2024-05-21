@@ -3,45 +3,57 @@
   src:url(GothamExtraLight.otf);
 }
 
+html {
+  height: 100%;
+}
+
 body{
   font-family: gotham;
-  background-color: #78866b;
+  background-color: #78866b;  
   color: black;
+  padding: none;
+  margin: none;
+  height: 90%;
 }
 
 h1{
-  font-size: xx-large;
+  font-size: 30px;
   text-align: left;
-  font-weight: 200;
+  font-weight: 400;
+  padding: none;
+  padding-left: 15px;
+  margin: none;
+  height: 35%;
 }
 
-/* change padding/alignment */
 .main {
   text-align: center;
+  align-items: center;
   font-size: medium;
   padding: none;
   margin: none;
+  height: 25%;
 }
 
 #mainLine{
-  font-size: xx-large;
+  font-size: 80px;
   text-align: center;
 }
 
 .bottomBar {
   font-size: 100%;
-  font-weight: 200;
+  font-weight: 100;
   width: 100%;
-  text-align: center;
-  background-color: transparent;
   color: black;
-}
+  display: flex;
+  background-color: transparent;  
+  justify-content: center;
+  align-items: flex-end;
 
-.bottomBar a {
-  font-size: 100%;
-  margin: 4px 1px;
+  margin: none;
+  padding: none;
+  height: 40%;
 }
-
 
 button {
   font-size: 100%;

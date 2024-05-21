@@ -8,34 +8,27 @@ function changeHexcode(hexcode) {
 
 /* functions called in index.html,  generates a random green and and random red color*/
 function generateGreen() {
-    green = randomColor(138, 154, 91);
+    green = randomColor(138, 154, 91, 20);
     changeBackground(green);    
     changeHexcode(green);
 }
 function generateRed() {
-    red = randomRed();
+    red = randomColor(136, 8, 8, 30);
     changeBackground(red);
     changeHexcode(red);
 }
 
-function randomGreen() {
-    const r = 138 + Math.floor(Math.random()*11)-5;
-    const g = 154 + Math.floor(Math.random()*11)-5;
-    const b = 91 + Math.floor(Math.random()*11)-5;
-    return rgbToHex(r, g, b)
-}
-function randomRed() {
-    const r = 136 + Math.floor(Math.random()*11)-5;
-    const g = 8 + Math.floor(Math.random()*11)-5;
-    const b = 8 + Math.floor(Math.random()*11)-5;
-    return rgbToHex(r, g, b)
-}
-function randomColor(r1, g1, b1) {
-    const range = 20;
-    const r2 = r1 + Math.floor(Math.random()*(range+1)-range);
-    const g2 = g1 + Math.floor(Math.random()*(range+1)-range);
-    const b2 = b1 + Math.floor(Math.random()*(range+1)-range);
-    return rgbToHex(r2, g2, b2)
+function randomColor(r, g, b, range) {
+    const initial = [r, g, b];
+    var newColor = [0, 0, 0];
+
+    for (let i = 0; i < initial.length; i++) {
+        do {
+            newColor[i] = initial[i] + Math.floor(Math.random()*(range+1)-range);
+        } while (!inRange(newColor[i]))
+    }
+
+    return rgbToHex(newColor[0], newColor[1], newColor[2]);
 }
 
 
@@ -54,4 +47,9 @@ function checkKeyPressed(evt) {
         generateGreen();
         document.getElementById("subLine").innerHTML = null;
     }
+}
+
+function inRange(value) {
+    if (value < 1 || value > 255) return false;
+    return true;
 }
