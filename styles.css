@@ -16,8 +16,40 @@ h1{
 }
 
 /* change padding/alignment */
+p {
+  text-align: center;
+  font-size: medium;
+  padding: none;
+  margin: none;
+}
+
 #mainLine{
   font-size: xx-large;
   text-align: center;
 }
 
+.bottomBar {
+  font-size: 100%;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+}
+
+.bottomBar a {
+  font-size: 100%;
+  margin: 4px 2px;
+}
+
+
+button {
+  font-size: 100%;
+  border: none;
+  color: black;
+  font-family: gotham;
+  background-color: transparent;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
