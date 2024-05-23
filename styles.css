@@ -4,7 +4,7 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
   color: black;
   padding: none;
   margin: none;
-  height: 90%;
+  height: 90vh;
 }
 
 h1{
@@ -32,12 +32,39 @@ h1{
   font-size: 30px;
   padding: none;
   margin: none;
-  height: 25%;
+
 }
 
 #mainLine{
   font-size: 80px;
+  margin-right: 2rem;
   text-align: center;
+}
+
+#copyIcon{
+  width: 3rem;
+}
+
+.firstLine{
+  justify-content: space-between;
+}
+
+#subline{
+  display: block; 
+}
+
+.popup {
+  background-color: black;
+  color: white;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 20px;
+  padding: 1px 20px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -350%);
+  display: none;
 }
 
 .bottomBar {
@@ -64,4 +91,8 @@ button {
   text-align: center;
   display: inline-block;
   cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }

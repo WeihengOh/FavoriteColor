@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html >
+    <head onmousedown="generateGreen()" onclick="removePrompt()">
         <meta charset="UTF-8">
         <title>Sage Green Generator</title>
         <link rel="stylesheet" href="styles.css">
@@ -9,16 +9,26 @@
 
     <body style="background-color: #78866b;">
 
-        <h1>Sage Green Generator</h1>
+        <h1 onmousedown="generateGreen()" onclick="removePrompt()">Sage Green Generator</h1>
         
+        <div class="popup" onmousedown="generateGreen()"  >
+            <p id="popupLine" >color copied</p>
+        </div>
+
         <div class="main"> 
-            <li id="mainLine">#78866b</li>
-            <li id="subLine">Press the spacebar</li>
+            
+            <ul>
+                <ul class="firstLine">
+                    <span id="mainLine" onclick="copyText()" >#78866b</span>
+                    <img src="public/copy.png" alt="copy icon" id="copyIcon" onclick="copyText()">
+                </ul>
+                <li id="subLine">Press the spacebar or press anywhere</li>
+            </ul>
         </div>    
 
-        <div class="bottomBar">
+        <div class="bottomBar"  onmousedown="generateGreen()" onclick="removePrompt()" >
             <p>
-                Made by: <button type="button" onmousedown="generateRed()">Weiheng Oh</button>
+                Made by: <button type="button"">Weiheng Oh</button>
             </p>
         </div>
 
