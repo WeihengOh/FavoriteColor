@@ -14,7 +14,7 @@ function changeCopy(color) {
 function generateGreen() {
     var delayInMilliseconds = 100; 
     setTimeout(function() {
-        green = randomColor(138, 154, 91, 20);
+        green = randomColor(138, 154, 91, 15);
         changeBackground(green);    
         changeHexcode(green);
         changeCopy(green);
