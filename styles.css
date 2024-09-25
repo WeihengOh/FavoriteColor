@@ -24,7 +24,6 @@ h1{
   padding-left: 15px;
   margin: none;
   height: 35%;
-  user-select: none;
 }
 
 .main {
@@ -33,7 +32,7 @@ h1{
   font-size: 30px;
   padding: none;
   margin: none;
-
+  caret-color: transparent;
 }
 
 #mainLine{
@@ -81,7 +80,6 @@ h1{
   margin: none;
   padding: none;
   height: 40%;
-  user-select: none;
 }
 
 button {
